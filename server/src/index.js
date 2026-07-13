@@ -34,7 +34,7 @@ if (db.prepare("SELECT COUNT(*) AS total FROM books").get().total === 0) {
     ["Atomic Habits", "James Clear", "Self development", "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg", "Reading"],
     ["The Midnight Library", "Matt Haig", "Fiction", "https://covers.openlibrary.org/b/isbn/9780525559498-L.jpg", "Completed"],
     ["Dune", "Frank Herbert", "Science fiction", "https://covers.openlibrary.org/b/isbn/9780441172719-L.jpg", "Want to read"],
-    ["The Creative Act", "Rick Rubin", "Creativity", "https://covers.openlibrary.org/b/isbn/9781838858636-L.jpg", "Want to read"]
+    ["The Creative Act", "Rick Rubin", "Creativity", "https://covers.openlibrary.org/b/isbn/9780593652886-L.jpg", "Want to read"]
   ].forEach((book) => add.run(...book));
 }
 db.exec("UPDATE books SET updatedAt = COALESCE(updatedAt, createdAt)");
