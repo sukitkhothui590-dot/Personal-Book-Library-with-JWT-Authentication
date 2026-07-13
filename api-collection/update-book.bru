@@ -1,0 +1,26 @@
+meta {
+  name: Update Book
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:4000/api/books/1
+  body: json
+}
+
+headers {
+  Authorization: Bearer {{token}}
+}
+
+body:json {
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "category": "Self development",
+    "status": "Completed",
+    "rating": 5,
+    "isbn": "9780735211292",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+  }
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Create Book
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:4000/api/books
+  body: json
+}
+
+headers {
+  Authorization: Bearer {{token}}
+}
+
+body:json {
+  {
+    "title": "Pachinko",
+    "author": "Min Jin Lee",
+    "category": "Fiction",
+    "status": "Want to read"
+  }
+}

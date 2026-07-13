@@ -1,0 +1,14 @@
+meta {
+  name: Delete Book
+  type: http
+  seq: 4
+}
+
+delete {
+  url: http://localhost:4000/api/books/1
+  body: none
+}
+
+headers {
+  Authorization: Bearer {{token}}
+}
