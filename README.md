@@ -2,6 +2,23 @@
 
 A full-stack personal library dashboard built with React, Express, SQLite and JWT authentication. Users can search, filter, rate and manage books, look up metadata by ISBN, and inspect the API through Swagger UI.
 
+## Branch guide
+
+The repository keeps each development milestone on a separate branch so the implementation history is easy to review.
+
+| Branch | Purpose | Main contents |
+| --- | --- | --- |
+| `main` | Submission-ready application | Complete frontend, backend, tests, documentation and Bruno collection |
+| `develop` | Integrated development baseline | Frontend and backend combined with API integration tests |
+| `feature/backend-setup` | Initial project foundation | npm workspaces, Vite/Express setup, environment example and ignore rules |
+| `feature/book-api` | Book data API | Express server, SQLite persistence and book CRUD endpoints |
+| `feature/jwt-auth` | Backend authentication | Login endpoint, expiring JWT generation and protected write middleware |
+| `feature/book-library-ui` | Library dashboard | Responsive dashboard, forms, book cards, details, ratings, search and filters |
+| `feature/frontend-auth` | Frontend session flow | Login screen, localStorage token handling, auth guard and automatic logout on `401` |
+| `docs/submission` | Submission documentation | README, REFLECTION, Bruno API collection and setup instructions |
+
+For final review and normal usage, clone or check out `main`. The feature branches are retained to show how the project was built in stages.
+
 ## Requirements
 
 - Node.js 20 or newer
