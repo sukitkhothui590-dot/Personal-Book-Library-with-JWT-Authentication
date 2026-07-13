@@ -1,6 +1,6 @@
 # Reflection
-The hardest part for me was keeping authentication state consistent between the browser and the API.
-I had to handle missing and expired JWTs without leaving the user on a broken dashboard.
-I also spent time making create, update and delete actions update the interface clearly.
-Adding isolated API tests helped me verify the protected routes without changing real library data.
-This project taught me to treat loading, error and empty states as part of the feature, not optional polish.
+ส่วนที่ยากที่สุดสำหรับผมคือการจัดการสถานะ Login ให้ตรงกันระหว่างหน้าเว็บกับ API
+ผมต้องรองรับทั้งกรณีไม่มี Token และ Token หมดอายุ โดยไม่ปล่อยให้ผู้ใช้ค้างอยู่ในหน้าที่ใช้งานไม่ได้
+อีกส่วนที่ใช้เวลาคือทำให้การเพิ่ม แก้ไข และลบหนังสืออัปเดตบนหน้าจออย่างชัดเจน
+การแยกฐานข้อมูลสำหรับ API Tests ช่วยให้ผมทดสอบระบบได้โดยไม่กระทบข้อมูลที่ใช้งานจริง
+งานนี้ทำให้ผมเข้าใจว่า Loading, Error และ Empty State เป็นส่วนหนึ่งของฟีเจอร์ ไม่ใช่เพียงการตกแต่งหน้าเว็บ
